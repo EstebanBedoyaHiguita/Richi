@@ -1,0 +1,702 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    /* permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: inherit;
+}
+/* MENU */
+
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo h1{
+    font-family:'Courier New', Courier, monospace, Geneva, Tahoma, sans-serif; 
+    font-size: 36px;
+    color: gold
+    
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: goldenrod;
+}
+
+.nav-responsive{
+    background-color: #4d4853;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* SECCION INICIO */
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url("./img/velas\ corazon.jpg");
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+/* .contenedor-img img{
+    margin-top: 50%;
+    width: 250px;
+    height: 220px;
+    
+} */
+
+.inicio .contenido-banner{
+
+    padding: 20px;
+    background-color: transparent;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: #1e2326;
+    border: solid 5px #1e2326;
+    /* top: 15%; */
+}
+
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 5px solid #4d4853;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius:100% ;
+}
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 40px;
+    font-family: "Tac One", sans-serif;
+}
+.inicio .contenido-banner h2{
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+
+}
+
+.inicio .contenido-banner .redes a:hover{
+    background-color: #7E30E1;
+}
+
+/* SOBRE MI */
+
+.trabajos{
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    background-color: transparent;
+    box-shadow: 3px 3px 3px 3px #4d4853;
+    
+}
+.trabajos h5{
+    color: gold ;
+}
+.trabajos p{
+    font-size: 15px;
+}
+
+.servicio{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.servicio .contenido-seccion{
+    padding: 5%;
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url("./img/mano.avif");
+    max-width: 1200px;
+    margin: auto ;
+}
+
+.servicio h2{
+    font-size: 48px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    color: gold;
+}
+
+.servicio .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.servicio .contenido-seccion p span{
+    color: #7E30E1;
+    font-weight: bold;
+}
+.servicio .fila{
+    display: flex;
+
+}
+.servicio .fila .col{
+    width: 50%;
+}
+.servicio .fila .col h3{
+    font-size: 28px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 25px;
+}
+.servicio .fila .col ul{
+    list-style: none;
+}
+
+.servicio .fila .col ul li{
+    margin: 12px 0;
+}
+.servicio .fila .col ul li strong{
+    display: inline-block;
+    color: #7E30E1;
+    width: 130px;
+
+}
+
+/* .sobremi .fila .col ul li span{
+    background-color: #7E30E1;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+} */
+
+.servicio .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.servicio .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color:#252a2e;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.servicio .fila .col .contenedor-intereses .interes:hover{
+    background-color: #7E30E1;
+}
+
+.servicio .fila .col .contenedor-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+    
+
+
+    .carrusel h1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: rgb(224, 205, 27);  
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+    }
+
+    .ok{
+        display: flex;
+        flex-direction: row;
+        padding: 3%;
+        text-align: center;
+        background-image: url("./img/fondo-rojo.avif");
+        /* background-position: 100%cqmin; */
+        /* background-position: initial; */
+        color: rgb(224, 205, 27);
+
+
+    }
+
+    .tesCarrusel img{
+        width: 100%;
+        height: 300px;
+        padding: 3%;
+        display: flex;
+        font-size: xx-large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+
+.contfinal{
+    background-color: #252a2e;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(224, 205, 27);
+   
+    
+}
+
+/* modal maestro  */
+.modal-dialog{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.modal-content .modal-header {
+    background-color: #252a2e;
+    color:gold;
+}
+.modal-footer{
+    background-color: #252a2e;
+    gap: 100px;
+}
+
+/* responsive nav  */
+
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252a2e;
+        width: 180px;
+
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+
+    .contenido-seccion{
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+    }
+    .fila{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .tarot {
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .tarot .tarjetas img{
+        width: 100px;
+        height: 150px;
+        
+        
+        
+    }
+    .testimonios{
+    
+        width: 100%;
+        height: auto;
+        
+        
+        
+        
+    }
+    
+    .contenedor_testinomios{
+        columns: 2;
+        width: 100%;
+        height: 800px;
+        display: flex;
+        justify-content:space-around;
+        
+    }
+    
+    .testimonio{
+        width: 30%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;        
+    }
+    
+    .testimonio img{
+        width: 30%;
+        height: 30px;
+    }
+
+    .testimonio p{
+        height: 50px;
+    }
+       
+
+    .contfinal{
+        margin-top: 100%;
+    }
+    
+}
+
+
+
+/* tarjetas  */
+.tarot{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url("./img/velas\ corazon.jpg");
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.tarot h2{
+    color: gold;
+}
+
+.tarjetas{
+    
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.tarjetas img{
+
+    width: 200px;
+    height: 300px;
+}
+
+#mago{
+    animation: mover_mago;
+    animation-duration: 15s;
+    animation-fill-mode: both;
+    
+}
+
+#torre{
+    animation: mover_torre;
+    animation-duration: 15s;
+    animation-fill-mode: both;
+}
+
+#Emperatriz{
+    animation: mover_emperatriz;
+    animation-duration: 15s;
+    animation-fill-mode: both;
+    
+}
+
+/* animaciones */
+
+
+
+@keyframes mover_mago{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(395%);
+    }
+    0%{
+        opacity: 3%;
+        scale: 2%;
+    }
+    25%{
+        opacity: 30%;
+        scale: 20%;
+    }
+    50%{
+        opacity: 50%;
+        scale: 50%;
+    }
+    75%{
+        opacity: 70%;
+        scale: 70%;
+    }
+    100%{
+        opacity: 100%;
+        scale: 100%;
+    }
+}
+
+
+
+@keyframes mover_torre{
+    from{
+        transform: translateX(x);
+    }
+    to{
+        transform: translateX(-195%);
+    }
+    0%{
+        opacity: 3%;
+        scale: 2%;
+    }
+    25%{
+        opacity: 30%;
+        scale: 20%;
+    }
+    50%{
+        opacity: 50%;
+        scale: 50%;
+    }
+    75%{
+        opacity: 70%;
+        scale: 70%;
+    }
+    100%{
+        opacity: 100%;
+        scale: 100%;
+    }
+}
+
+
+
+
+@keyframes mover_emperatriz{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-195%);
+    }
+    0%{
+        opacity: 3%;
+        scale: 2%;
+    }
+    25%{
+        opacity: 30%;
+        scale: 20%;
+    }
+    50%{
+        opacity: 50%;
+        scale: 50%;
+    }
+    75%{
+        opacity: 70%;
+        scale: 70%;
+    }
+    100%{
+        opacity: 100%;
+        scale: 100%;
+    }
+    
+}
+
+
+
+    
+
+@media (max-width: 768px) {
+    #mago {
+        animation: mover_mago_mobile 10s forwards;
+    }
+
+     #torre {
+        animation: mover_torre_mobile 10s forwards;
+    }
+
+    #Emperatriz {
+        animation: mover_emperatriz_mobile 10s forwards;
+    }
+
+    @keyframes mover_mago_mobile {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(250%);
+        }
+        0%{
+            opacity: 3%;
+            scale: 2%;
+        }
+        25%{
+            opacity: 30%;
+            scale: 20%;
+        }
+        50%{
+            opacity: 50%;
+            scale: 50%;
+        }
+        75%{
+            opacity: 70%;
+            scale: 70%;
+        }
+        100%{
+            opacity: 100%;
+            scale: 100%;
+        }
+    }
+
+    @keyframes mover_torre_mobile {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-120%);
+        }
+        0%{
+            opacity: 3%;
+            scale: 2%;
+        }
+        25%{
+            opacity: 30%;
+            scale: 20%;
+        }
+        50%{
+            opacity: 50%;
+            scale: 50%;
+        }
+        75%{
+            opacity: 70%;
+            scale: 70%;
+        }
+        100%{
+            opacity: 100%;
+            scale: 100%;
+        }
+    }
+
+    @keyframes mover_emperatriz_mobile {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-130%);
+        }
+        0%{
+            opacity: 3%;
+            scale: 2%;
+        }
+        25%{
+            opacity: 30%;
+            scale: 20%;
+        }
+        50%{
+            opacity: 50%;
+            scale: 50%;
+        }
+        75%{
+            opacity: 70%;
+            scale: 70%;
+        }
+        100%{
+            opacity: 100%;
+            scale: 100%;
+        }
+    }
+
+    
+    
+}
+
+/* testimonios  */
+
+.testimonios{
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+.contenedor_testinomios{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonio{
+    width: 30%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2px;
+}
+
+.testimonio img{
+    width: 80%;
+    height: 300px;
+}
+
