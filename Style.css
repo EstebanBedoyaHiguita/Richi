@@ -583,7 +583,7 @@ html{
             transform: translateX(0);
         }
         to {
-            transform: translateX(-130%);
+            transform: translateX(-125%);
         }
         0%{
             opacity: 3%;
