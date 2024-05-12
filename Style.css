@@ -664,5 +664,112 @@ html{
         flex-direction: column;
         gap: 5px;
     }
+    .floating-button2{
+        display: none;
+    }
 
 }
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    
+    border: none;
+    /* border-radius: 50%; */
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: moverBoton;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  .floating-button a{
+    text-decoration: none;
+    color: white;
+    
+  }
+  
+  .floating-button:hover {
+    background-color: white;
+    
+  }
+  .floating-button2:hover {
+    background-color: white;
+    
+  }
+
+  .floating-button2 {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #007bff;
+    
+    border: none;
+    /* border-radius: 50%; */
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: moverBoton;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  .floating-button2 a{
+    text-decoration: none;
+    color: white;
+    
+  }
+  .floating-button2 a:hover{
+    color: black;
+  }
+  .floating-button a:hover{
+    color: black;
+  }
+  
+  
+  /* .floating-button:hover {
+    background-color: white;
+    
+  } */
+
+  @keyframes moverBoton{
+    from {
+        transform: scale(1.05);
+    }
+    to {
+        transform: scale(1.10);
+    }
+    0%{
+        
+        scale: 2%;
+    }
+    25%{
+        
+        scale: 20%;
+    }
+    45%{
+        
+        scale: 40%;
+    }
+    65%{
+        
+        scale: 60%;
+    }
+    85%{
+        
+        scale: 80%;
+    }
+    100%{
+        
+        scale: 100%;
+    }
+  }
